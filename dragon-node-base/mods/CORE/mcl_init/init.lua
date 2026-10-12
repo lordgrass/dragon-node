@@ -168,10 +168,9 @@ function mcl_vars.get_chunk_number(pos) -- unsigned int
 end
 
 if mcl_vars.enable_mcl_levelgen then
-	mcl_vars.mg_overworld_min = -128
+	mcl_vars.mg_overworld_min = -512 --Ena | Set max world depth to -512
 	mcl_vars.mg_overworld_min_old = -128
-	mcl_vars.mg_overworld_max_official = mcl_vars.mg_overworld_min
-		+ minecraft_new_height_limit
+	mcl_vars.mg_overworld_max_official = mcl_vars.mg_overworld_min + minecraft_new_height_limit
 	mcl_vars.mg_bedrock_overworld_min = mcl_vars.mg_overworld_min
 	mcl_vars.mg_bedrock_overworld_max = mcl_vars.mg_bedrock_overworld_min + 4
 	mcl_vars.mg_lava_overworld_max = mcl_vars.mg_overworld_min + 10
@@ -197,7 +196,6 @@ elseif not mcl_vars.superflat and (not singlenode or normal_vars_in_singlenode) 
 	mcl_vars.mg_lava_overworld_max = mcl_vars.mg_overworld_min + 10
 	mcl_vars.mg_lava = true
 	mcl_vars.mg_bedrock_is_rough = true
-
 elseif singlenode then
 	mcl_vars.mg_overworld_min = -130
 	mcl_vars.mg_overworld_min_old = -64
