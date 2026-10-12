@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Luanti textdomain mcl_experience x.x.x\n"
+"Report-Msgid-Bugs-To: no@example.com\n"
+"POT-Creation-Date: 2026-04-01 20:58+0200\n"
+"PO-Revision-Date: 2026-08-28 06:32+0000\n"
+"Last-Translator: Anonymous <anonymous@noreply.codeberg.org>\n"
+"Language-Team: Russian <https://translate.codeberg.org/projects/mineclonia/"
+"mcl_experience/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Weblate 2026.8.1\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: mods/HUD/mcl_experience/bottle.lua:66
+msgid "Bottle o' Enchanting"
+msgstr "Пузырёк опыта"
+
+#: mods/HUD/mcl_experience/command.lua:4
+msgid "[[<player>] <xp>]"
+msgstr "[[<игрок>] <xp>]"
+
+#: mods/HUD/mcl_experience/command.lua:5
+msgid "Gives a player some XP"
+msgstr "Даёт игроку XP"
+
+#: mods/HUD/mcl_experience/command.lua:15
+msgid "Error: Too many parameters!"
+msgstr "Ошибка: слишком много параметров!"
+
+#: mods/HUD/mcl_experience/command.lua:28
+msgid "Error: Incorrect value of XP"
+msgstr "Ошибка: недопустимое значение XP"
+
+#: mods/HUD/mcl_experience/command.lua:32
+msgid "Error: Player not found"
+msgstr "Ошибка: игрок не найден"
+
+#: mods/HUD/mcl_experience/command.lua:37
+msgid "Added @1 XP to @2, total: @3, experience level: @4"
+msgstr "Добавлено @1 XP игроку @2, итого: @3, уровень опыта: @4"
