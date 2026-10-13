@@ -167,7 +167,7 @@ function mcl_vars.get_chunk_number(pos) -- unsigned int
 		 c.x + k_positive
 end
 
-if mcl_vars.enable_mcl_levelgen then
+if mcl_vars.enable_mcl_levelgen then --Ena | World parameters 
 	mcl_vars.mg_overworld_min = -512 --Ena | Set max world depth to -512
 	mcl_vars.mg_overworld_min_old = -128
 	mcl_vars.mg_overworld_max_official = mcl_vars.mg_overworld_min + minecraft_new_height_limit
