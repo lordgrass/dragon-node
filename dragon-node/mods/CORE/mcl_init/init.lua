@@ -4,13 +4,19 @@ local normal_vars_in_singlenode = false
 
 local modpath = core.get_modpath(core.get_current_modname())
 
--- Some global variables (don't overwrite them!)
-mcl_vars = {}
+--Ena | All occurences of mcl_vars will be changed to dragon_node upon test phase.
+mcl_vars = {} 
+mcl_vars.config = {}
 
-mcl_vars.mg_overworld_min_old = -62
+mcl_vars.mg_overworld_min_old = -62 --Ena | Move to World Generation Section of game.conf
 
 --- GUI / inventory menu settings
-mcl_vars.gui_slots = "listcolors[#9990;#FFF7;#FFF0;#000;#FFF]"
+--Ena | All hardcoded values for styling will be added to the Gui Style Section of game.conf.
+mcl_vars.gui_slots =
+	style_settings:get(
+		"gui_slots",
+		"listcolors[#9990;#FFF7;#FFF0;#000;#FFF]" --Fallback
+	)
 -- nonbg is added as formspec prepend in mcl_formspec_prepend
 mcl_vars.gui_nonbg = mcl_vars.gui_slots ..
 	"style_type[image_button;border=false;bgimg=mcl_inventory_button9.png;bgimg_pressed=mcl_inventory_button9_pressed.png;bgimg_middle=2,2]"..
